@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for BTech first-year students of CS under KTU, with resources, information, and more.">
+    <meta name="author" content="Your Name">
+    <title>KTU BTech CS - First Year Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>KTU BTech CS</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome BTech First-Year CS Students</h2>
+                <p>Your journey to becoming a Computer Science professional starts here!</p>
+                <a href="#resources" class="btn">Explore Resources</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About KTU and BTech CS</h2>
+            <p>The BTech in Computer Science at KTU prepares you for a dynamic career in technology. From programming basics to advanced computer science concepts, we’re here to help you succeed!</p>
+        </section>
+
+        <section id="resources">
+            <h2>Student Resources</h2>
+            <div class="resource-cards">
+                <div class="card">
+                    <h3>Programming Resources</h3>
+                    <p>Learn C, C++, Python, and more!</p>
+                </div>
+                <div class="card">
+                    <h3>Mathematics & Algorithms</h3>
+                    <p>Brush up on your problem-solving skills with math and algorithms.</p>
+                </div>
+                <div class="card">
+                    <h3>Study Tips</h3>
+                    <p>Tips for excelling in exams and assignments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or need help, feel free to <a href="mailto:your-email@example.com">email us</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KTU BTech CS - All rights reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Add JavaScript file for interactivity -->
+</body>
+</html>
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting a base font and color scheme */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8f9;
+    color: #333;
+}
+
+header {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    background-color: #3f51b5;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    background-image: url('https://via.placeholder.com/1500x600'); /* Placeholder image for hero section */
+    background-size: cover;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero .btn {
+    background-color: #ff7043;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section#about p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.resource-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.resource-cards .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.resource-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5c6bc0;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelector('header nav ul');
+    const toggleMenu = document.querySelector('.menu-toggle');
+
+    toggleMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
