@@ -1,0 +1,108 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting a base font and color scheme */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8f9;
+    color: #333;
+}
+
+header {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    background-color: #3f51b5;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    background-image: url('https://via.placeholder.com/1500x600'); /* Placeholder image for hero section */
+    background-size: cover;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero .btn {
+    background-color: #ff7043;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section#about p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.resource-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.resource-cards .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.resource-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5c6bc0;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
